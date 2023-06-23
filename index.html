@@ -1,27 +1,12 @@
-<!DOCTYPE html>
 <html>
-<body>	
-  
-	<script type="text/javascript">
-            window.location.href ="<?php
-			
-			if($_GET['linknya']<>'')
-			{
-			echo  $_GET['linknya'];
-			} else {	
-			echo 'none.html';	
-			}	
-				
-				?>"
-        </script>	
- 
-	<?php
-	echo 2*3;
-	?>
-	wew2
-	<script type="text/javascript">
-		alert("Action successfully executed");
-		window.location.href=google.com
-	</script>
-</body>
+  <head>
+    <title>Untitled</title>
+  </head>
+  <body>
+<script type="text/javascript">
+    let query = location.search;
+	window.location.href= (query.replace("?",""));
+</script>
+  </body>
 </html>
+
